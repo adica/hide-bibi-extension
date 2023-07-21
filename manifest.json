@@ -1,0 +1,21 @@
+{
+  "name": "hide bibi",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Hide all images of bibi",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "icons": {
+    "16": "hide-icon-bibi-x16.png",
+    "38": "hide-icon-bibi-x38.png",
+    "48": "hide-icon-bibi-x48.png",
+    "96": "hide-icon-bibi-x96.png",
+    "128": "hide-icon-bibi-x96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}

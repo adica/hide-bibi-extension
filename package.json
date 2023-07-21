@@ -1,0 +1,11 @@
+{
+  "name": "hide-bibi-extension",
+  "version": "0.0.1",
+  "description": "Hide all images of Benjamin Netanyahu",
+  "main": "contentscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
