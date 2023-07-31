@@ -8,7 +8,7 @@ const personNames = [
     'ביבי נתניהו',
     'בנימין נתניהו'
 ];
-const PLACEHOLDER_URL = 'https://placehold.co/600x400/EEE/31343C?font=oswald&text=image%20of%20a%20dictator';
+const PLACEHOLDER_URL = '//placehold.co/600x400/EEE/31343C?font=oswald&text=hide%20him';
 
 const images = document.getElementsByTagName('img');
 
