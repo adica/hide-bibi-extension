@@ -8,7 +8,7 @@ const personNames = [
     'ביבי נתניהו',
     'בנימין נתניהו'
 ];
-const PLACEHOLDER_URL = 'https://placehold.co/600x400/EEE/31343C?font=oswald&text=image%20of%20a%20dictator'
+const PLACEHOLDER_URL = 'https://placehold.co/600x400/EEE/31343C?font=oswald&text=image%20of%20a%20dictator';
 
 const images = document.getElementsByTagName('img');
 
@@ -16,7 +16,11 @@ function changeImag({ image }) {
     const newImage = new Image();
     newImage.src = PLACEHOLDER_URL;
     newImage.style = image.style;
-    image.parentNode.replaceChild(newImage, image);
+    if (image?.parentNode) {
+        image.parentNode.replaceChild(newImage, image);
+    } else {
+        image.style.display = 'none';
+    }
 }
 
 Array.from(images).forEach((image) => {
