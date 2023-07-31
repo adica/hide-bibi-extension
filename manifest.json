@@ -1,10 +1,9 @@
 {
-  "name": "hide bibi",
+  "name": "Hide him",
   "action": {},
   "manifest_version": 3,
-  "version": "0.1",
-  "description": "Hide all images of bibi",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "version": "0.0.2",
+  "description": "Hide all images of Benjamin Netanyahu",
   "icons": {
     "16": "hide-icon-bibi-x16.png",
     "38": "hide-icon-bibi-x38.png",
