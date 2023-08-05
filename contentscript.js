@@ -8,15 +8,17 @@ const personNames = [
     'ביבי נתניהו',
     'בנימין נתניהו'
 ];
-const PLACEHOLDER_URL = '//placehold.co/600x400/EEE/31343C?font=oswald&text=hide%20him';
+const PLACEHOLDER_URL = '//placehold.co/widthXheight/EEE/31343C?font=oswald&text=hide%20him';
 
 const images = document.getElementsByTagName('img');
 
 function changeImag({ image }) {
     const newImage = new Image();
-    newImage.src = PLACEHOLDER_URL;
     newImage.style = image.style;
-    if (image?.parentNode) {
+    const width = image.clientWidth;
+    const height = image.clientHeight;
+    if (image?.parentNode && width && height) {
+        newImage.src = PLACEHOLDER_URL.replace('width', width).replace('height', height);
         image.parentNode.replaceChild(newImage, image);
     } else {
         image.style.display = 'none';
